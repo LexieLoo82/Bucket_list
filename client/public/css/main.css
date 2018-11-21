@@ -1,0 +1,39 @@
+body {
+  background-image: url("http://2.bp.blogspot.com/-IpfPnFG4tXQ/Up7pFq7qzVI/AAAAAAAABBQ/RJo0RG7n-zQ/s1600/golden_field_3-wallpaper-1280x768.jpg");
+  background-color: #cccccc;
+  font-family: arial;
+    color: white;
+      text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+
+input[type=submit], button.delete-btn, .delete-btn  {
+  display: block;
+  border-color: transparent;
+  border-radius: 5px;
+  background-color: #4D6F4A;
+  padding: 4px 10px 6px;
+  margin: 1em 0;
+  color: white;
+}
+
+#activity-view {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+#activities{
+  display: flex;
+flex-wrap: wrap;
+  position: absolute;
+  left: 250px;
+  top: 0px;
+}

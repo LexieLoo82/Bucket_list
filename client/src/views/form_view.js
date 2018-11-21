@@ -18,7 +18,7 @@ FormView.prototype.handleSubmit = function (event) {
   console.log('handlesubmit event', event);
   const newActivity = this.createActivity(event.target);
   PubSub.publish('ActivityView:ActivitySubmitted', newActivity);
-  event.target.reset();
+  // event.target.reset();
 };
 
 

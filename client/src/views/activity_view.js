@@ -7,7 +7,7 @@ const ActivityView = function(container){
 
 ActivityView.prototype.render = function (activity) {
   const activityContainer = document.createElement('div');
-  activityContainer.id = 'activity';
+  activityContainer.id = 'activity-view';
 
   const activityx = this.createHeading(activity.activity);
   activityContainer.appendChild(activityx);
@@ -37,6 +37,7 @@ ActivityView.prototype.createDeleteButton = function (activityId) {
   const button = document.createElement('button');
   button.classList.add('delete-btn');
   button.value = activityId;
+  button.textContent = 'Undo'
 
   button.addEventListener('click', (event) => {
     PubSub.publish('activityView:activity-delete-clicked', event.target.value);
