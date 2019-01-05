@@ -1,15 +1,14 @@
 body {
-  background-image: url("http://2.bp.blogspot.com/-IpfPnFG4tXQ/Up7pFq7qzVI/AAAAAAAABBQ/RJo0RG7n-zQ/s1600/golden_field_3-wallpaper-1280x768.jpg");
-  background-color: #cccccc;
-  font-family: arial;
-    color: white;
-      text-shadow:
-      -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000;
+  background-image: url("./images/mountain.jpg");
+    color: black;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
 }
 
+form{
+          box-sizing: border-box;
+          width: 100px;
+}
 
 input[type=submit], button.delete-btn, .delete-btn  {
   display: block;
@@ -32,8 +31,8 @@ input[type=submit], button.delete-btn, .delete-btn  {
 
 #activities{
   display: flex;
-flex-wrap: wrap;
+  flex-wrap: wrap;
   position: absolute;
-  left: 250px;
-  top: 0px;
+  left: 25%;
+  top: 0%;
 }

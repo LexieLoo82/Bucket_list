@@ -13,7 +13,7 @@ Activity.prototype.bindEvents = function () {
   })
   PubSub.subscribe('ActivityView:ActivitySubmitted', (event) => {
     this.postActivity(event.detail);
-  });
+  })
 };
 
 Activity.prototype.getData = function () {
@@ -39,6 +39,7 @@ this.request.delete(activityId)
 })
 .catch(console.error);
 };
+
 
 
 module.exports = Activity;

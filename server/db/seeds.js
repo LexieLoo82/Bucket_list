@@ -4,7 +4,7 @@ db.dropDatabase();
 db.activities.insertMany([
   {
     activity: "bungy jumping",
-    location: "Sutherland",
+    location: "New Zealand",
   },
   {
     activity: "shark diving",
@@ -12,6 +12,6 @@ db.activities.insertMany([
   },
   {
     activity: "ballooning",
-    location: "Sutherland",
+    location: "Nevada",
   }
 ]);

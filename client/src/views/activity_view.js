@@ -37,7 +37,7 @@ ActivityView.prototype.createDeleteButton = function (activityId) {
   const button = document.createElement('button');
   button.classList.add('delete-btn');
   button.value = activityId;
-  button.textContent = 'Undo'
+  button.textContent = 'Remove'
 
   button.addEventListener('click', (event) => {
     PubSub.publish('activityView:activity-delete-clicked', event.target.value);
@@ -46,5 +46,19 @@ ActivityView.prototype.createDeleteButton = function (activityId) {
 
   return button;
 };
+
+// ActivityView.prototype.createCompleteButton = function (activityId) {
+//   const button = document.createElement('button');
+//   button.classList.add('complete-btn');
+//   button.value = activityId;
+//   button.textContent = 'Complete'
+//
+//   button.addEventListener('click', (event) => {
+//     PubSub.publish('activityView:activity-completed-clicked', event.target.value);
+//     console.log(event.target.value);
+//   });
+//
+//   return button;
+// };
 
 module.exports = ActivityView;
